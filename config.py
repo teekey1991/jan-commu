@@ -24,9 +24,9 @@ class Customer(Model):
     inputEmail = CharField(primary_key=True)
     inputPassword = CharField()
     lastname = CharField()
-    farstname = CharField()
+    firstname = CharField()
     lastnamekana = CharField()
-    farstnamekana = CharField()
+    firstnamekana = CharField()
     inputZip = IntegerField()
     inputadress = CharField()
     inputage = IntegerField()
@@ -38,3 +38,21 @@ class Customer(Model):
 
 
 db.create_tables([Customer])
+
+
+
+class Post(Model):
+    """Post Model"""
+
+    Customer_email = CharField(primary_key=True)
+    Area = CharField()
+    When = CharField()
+    Level = CharField()
+    Class = CharField()
+    text = CharField()
+ 
+    class Meta:
+        database = db
+        table_name = "Post"
+
+db.create_tables([Post])

@@ -77,7 +77,11 @@
         <span class="fs-4">雀コミュ</span>
         </a>
         <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">ホーム</a></li>
+        {% if customer %}
+        <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">ホーム</a></li>
+        {% else %}
+        {% endif %}
+        <!-- <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">ホーム</a></li> -->
         <li class="nav-item"><a href="/" class="nav-link">検索</a></li>
         <li class="nav-item"><a href="#" class="nav-link">メッセージ管理</a></li>
         <li class="nav-item"><a href="#" class="nav-link">予約一覧</a></li>
@@ -86,7 +90,8 @@
 
         <div class="col-md-3 text-end">
         {% if customer %}
-          <p>{{ customer.lastname }}</p>
+          {{ customer.lastname }}
+          {{ customer.farstname }}
         {% else %}
           <a class="btn btn-outline-primary me-2" href="/login">ログイン</a>
           <a class="btn btn-primary" href="/register">登録</a>
