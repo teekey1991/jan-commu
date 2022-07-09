@@ -73,6 +73,7 @@
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+        <!-- <img src="static\image\thina.jpeg" width="200"> -->
         <span class="fs-4">雀コミュ</span>
         </a>
         <ul class="nav nav-pills">
@@ -84,8 +85,13 @@
         </ul>
 
         <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2" a href="/login">ログイン</button>
-        <a class="btn btn-primary" href="/register">登録</a>
+        {% if customer %}
+          <p>{{ customer.lastname }}</p>
+        {% else %}
+          <a class="btn btn-outline-primary me-2" href="/login">ログイン</a>
+          <a class="btn btn-primary" href="/register">登録</a>
+        {% endif %}
+
         </div>
     </header>
     </div>

@@ -91,50 +91,50 @@
 
     <main class="col-md-8 offset-md-2">
       <h1 class="visually-hidden">新規登録</h1>
-      <form class="row g-3"  action="/register" method="post">
+      <form class="row g-3" action="/register" method="post">
         <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">メールアドレス</label>
-        <input type="email" class="form-control" id="inputEmail4">
+        <label for="inputEmail" class="form-label">メールアドレス</label>
+        <input type="email" class="form-control" id="inputEmail" name="inputEmail">
         </div>
         <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">パスワード</label>
-        <input type="password" class="form-control" id="inputPassword4">
+        <label for="inputPassword" class="form-label">パスワード</label>
+        <input type="password" class="form-control" id="inputPassword" name="inputPassword">
         </div>
 
         <div class="col-md-6">
         <label for="lastname" class="form-label">名字</label>
-        <input type="text" class="form-control" id="lastname" placeholder="佐藤">
+        <input type="text" class="form-control" id="lastname" placeholder="佐藤" name="lastname">
         </div>
         <div class="col-md-6">
         <label for="farstname" class="form-label">名前</label>
-        <input type="text" class="form-control" id="farstname" placeholder="太郎">
+        <input type="text" class="form-control" id="farstname" placeholder="太郎" name="farstname">
         </div>
         <div class="col-md-6">
         <label for="lastnamekana" class="form-label">名字カナ</label>
-        <input type="text" class="form-control" id="lastname" placeholder="サトウ">
+        <input type="text" class="form-control" id="lastname" placeholder="サトウ" name="lastnamekana">
         </div>
         <div class="col-md-6">
         <label for="farstnamekana" class="form-label">名前カナ</label>
-        <input type="text" class="form-control" id="farstnamekana" placeholder="タロウ">
+        <input type="text" class="form-control" id="farstnamekana" placeholder="タロウ" name="farstnamekana">
         </div>
 
         <div class="col-md-3">
         <label for="inputZip" class="form-label">郵便番号(ハイフンなし)</label>
-        <input type="text" class="form-control" id="inputZip" placeholder="入力">
+        <input type="text" class="form-control" id="inputZip" placeholder="入力" name="inputZip">
         </div>
         <div class="col-md-12">
         <label for="inputadress" class="form-label">住所</label>
-        <input type="text" class="form-control" id="inputadress" placeholder="入力">
+        <input type="text" class="form-control" id="inputadress" placeholder="入力" name="inputadress">
         </div>
 
         <div class="col-md-3">
         <label for="inputage" class="form-label">年齢</label>
-        <input type="text" class="form-control" id="inputage" placeholder="入力">
+        <input type="text" class="form-control" id="inputage" placeholder="入力" name="inputage">
         </div>
 
         <div class="col-md-4">
-        <label for="inputState" class="form-label">レベル</label>
-        <select id="inputState" class="form-select">
+        <label for="inputlevel" class="form-label">レベル</label>
+        <select id="inputlevel" class="form-select" name="level">
           <option selected>選択</option>
           <option>初心者</option>
           <option>中級者</option>

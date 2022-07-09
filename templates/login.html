@@ -86,6 +86,7 @@
         <li class="nav-item"><a href="#" class="nav-link">プロフィール</a></li>
       </ul>
 
+
       <div class="col-md-3 text-end">
         <button type="button" class="btn btn-outline-primary me-2">ログイン</button>
         <button type="button" class="btn btn-primary">登録</button>
@@ -96,16 +97,16 @@
  <!--------------------- -->
       
 <main class="form-signin">
-  <form>
+  <form class="row g-3" action="/login" method="post">
     <!-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
     <h1 class="h3 mb-3 fw-normal">ログイン</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="email" name="Userid" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" name="Userpassword" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">Password</label>
     </div>
 
