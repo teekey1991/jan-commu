@@ -77,7 +77,7 @@
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
         <span class="fs-4">雀コミュ</span>
-      </a>
+        </a>
         <ul class="nav nav-pills">
         {% if customer %}
         <li class="nav-item"><a href="/home" class="nav-link active" aria-current="page">ホーム</a></li>
@@ -89,11 +89,18 @@
         </ul>
 
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">ログイン</button>
-        <button type="button" class="btn btn-primary">登録</button>
-      </div>
-    </header>
+        <div class="col-md-3 text-end">
+          {% if customer %}
+          <a class="btn btn-outline-primary me-2" href="/post">募集</a>          
+            {{ customer.lastname }}
+            {{ customer.firstname }}
+          {% else %}
+            <a class="btn btn-outline-primary me-2" href="/login">ログイン</a>
+            <a class="btn btn-primary" href="/register">登録</a>
+          {% endif %}
+        </div>
+      
+      </header>
   </div>
 
  <!--------------------- -->

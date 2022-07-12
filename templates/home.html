@@ -86,7 +86,9 @@
 
         <div class="col-md-3 text-end">
         {% if customer %}
-          <p>{{ customer.lastname }}</p>
+          <a class="btn btn-outline-primary me-2" href="/post">募集</a>
+          {{ customer.lastname }}
+          {{ customer.firstname }}
         {% else %}
           <a class="btn btn-outline-primary me-2" href="/login">ログイン</a>
           <a class="btn btn-primary" href="/register">登録</a>
@@ -148,7 +150,8 @@
           <option>宮崎県</option>
           <option>鹿児島県</option>
           <option>沖縄県</option>
-
+        </select>
+        
         <!--週/時間 <input type="date" aria-label="day" class="form-control" placeholder="開催日"> -->
         <select id="inputState" aria-label="level" class="form-select">
           <option selected>レベル</option>

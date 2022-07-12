@@ -69,28 +69,28 @@
 <!--------------------- -->
     <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
-        <span class="fs-4">雀コミュ</span>
-        </a>
-        <ul class="nav nav-pills">
-        <li class="nav-item"><a href="home.html" class="nav-link active" aria-current="page">ホーム</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">検索</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">メッセージ管理</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">予約一覧</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">プロフィール</a></li>
-        </ul>
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+      <span class="fs-4">雀コミュ</span>
+      </a>
+      <ul class="nav nav-pills">
+      <li class="nav-item"><a href="home.html" class="nav-link active" aria-current="page">ホーム</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">検索</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">メッセージ管理</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">予約一覧</a></li>
+      <li class="nav-item"><a href="#" class="nav-link">プロフィール</a></li>
+      </ul>
 
-        <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">ログイン</button>
-        <button type="button" class="btn btn-primary">登録</button>
-        </div>
+      <div class="col-md-3 text-end">
+          <a class="btn btn-outline-primary me-2" href="/login">ログイン</a>
+          <a class="btn btn-primary" href="/register">登録</a>
+      </div>
     </header>
     </div>
 <!--------------------- -->
 
     <main class="col-md-8 offset-md-2">
-      <h1 class="visually-hidden">新規登録</h1>
+      <h1>新規登録</h1>
       <form class="row g-3" action="/register" method="post">
         <div class="col-md-6">
         <label for="inputEmail" class="form-label">メールアドレス</label>
@@ -122,6 +122,60 @@
         <label for="inputZip" class="form-label">郵便番号(ハイフンなし)</label>
         <input type="text" class="form-control" id="inputZip" placeholder="入力" name="inputZip">
         </div>
+
+        <!-- <div class="col-md-4">
+        <label for="inputlevel" class="form-label">都道府県</label>
+          <select id="inputArea" aria-label="area" class="form-select" placeholder="エリア">
+            <option selected>選択</option>
+            <option>北海道</option>
+            <option>青森県</option>
+            <option>岩手県</option>
+            <option>宮城県</option>
+            <option>秋田県</option>
+            <option>山形県</option>
+            <option>福島県</option>
+            <option>茨城県</option>
+            <option>栃木県</option>
+            <option>群馬県</option>
+            <option>埼玉県</option>
+            <option>千葉県</option>
+            <option>東京都</option>
+            <option>神奈川県</option>
+            <option>新潟県</option>
+            <option>富山県</option>
+            <option>石川県</option>
+            <option>福井県</option>
+            <option>山梨県</option>
+            <option>長野県</option>
+            <option>岐阜県</option>
+            <option>静岡県</option>
+            <option>愛知県</option>
+            <option>三重県</option>
+            <option>滋賀県</option>
+            <option>京都府</option>
+            <option>大阪府</option>
+            <option>兵庫県</option>
+            <option>奈良県</option>
+            <option>和歌山県</option>
+            <option>鳥取県</option>
+            <option>島根県</option>
+            <option>岡山県</option>
+            <option>広島県</option>
+            <option>山口県</option>
+            <option>徳島県</option>
+            <option>香川県</option>
+            <option>愛媛県</option>
+            <option>高知県</option>
+            <option>福岡県</option>
+            <option>佐賀県</option>
+            <option>長崎県</option>
+            <option>熊本県</option>
+            <option>大分県</option>
+            <option>宮崎県</option>
+            <option>鹿児島県</option>
+            <option>沖縄県</option>
+          </select>
+        </div> -->
         <div class="col-md-12">
         <label for="inputadress" class="form-label">住所</label>
         <input type="text" class="form-control" id="inputadress" placeholder="入力" name="inputadress">
